@@ -1,0 +1,13 @@
+---
+---
+{
+    "title": "3d旋转"
+    ,"subTitle": "CSS3"
+    ,"type": "page"
+    ,"filter": "css"
+    ,"wrapper": {
+         "class": "mw1000"
+    }
+    ,"class": "w800h750"
+    ,"url": "{{ site.url }}/works/css-round3d"
+}

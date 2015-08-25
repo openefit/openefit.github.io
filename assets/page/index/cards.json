@@ -1,0 +1,8 @@
+{
+    "includes": ["activity-view-test", "activity-exchange-head", "activity-is-true", "activity-meeting", "chameleon", "round3d", "rotate-x", "activity-emergency"],
+    "image": {
+        "default": {
+            "total": 31
+        }
+    }
+}

@@ -1,0 +1,5 @@
+
+* This is my front end blog http://openefit.github.io/
+  [[http://github.com/hack2/hpstr-jekyll-theme][套用hpstr jekyll 模版]]
+** 主要参考目录
+   |_posts | works

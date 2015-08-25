@@ -1,0 +1,145 @@
+main{
+  width: 1124px;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+}
+#target{
+  position: absolute;
+  left: 360px;
+  width: 710px;
+  z-index: 10000;
+  min-height: 100%;
+  height: 2000px;
+  margin-left: -5px;
+  top: 50px;
+  margin-left: -130px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #ccc;
+}
+#voice{
+  height: 0;
+}
+.mask{
+  position: fixed;
+  z-index: 10050;
+  width: 360px;
+  height: 100%;
+  background-color: #000;
+}
+#game{
+  position: absolute;
+  right: 0;
+  margin-left: 0;
+  z-index: 20000;
+}
+.add-files{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  text-align: right;
+}
+.add-outer{
+//  position: fixed;
+//  right: 0;
+//  -webkit-box-sizing: border-box;
+//  -moz-box-sizing: border-box;
+//  box-sizing: border-box;
+  position: absolute;
+  left: 28px;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  margin: auto;
+  border: dotted 1px #ccc;
+
+  input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 3000000;
+  }
+
+}
+.cross {
+  position: absolute;
+  top: 20;
+  left: 20;
+  background: linear-gradient(to bottom, transparent 47.5%, #d6d6d6 47.5%, #d6d6d6 52.5%, transparent 52.5%),
+  linear-gradient(to right, transparent 47.5%, #d6d6d6 47.5%, #d6d6d6 52.5%, transparent 52.5%);
+  cursor: pointer;
+}
+.cross:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  cursor:pointer;
+  background: linear-gradient(to right, transparent 0%,#25272b 0%, #25272b 25%, transparent 25%),
+  linear-gradient(to bottom, transparent 0%,#25272b 0%, #25272b 25%, transparent 25%);
+}
+.cross:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor:pointer;
+  width: 120px;
+  height: 120px;
+
+  background: linear-gradient(to right, transparent 75%, #25272b 75%, #25272b 100%, transparent 100%),
+  linear-gradient(to bottom, transparent 75%,#25272b 75%, #25272b 100%, transparent 100%);
+}
+//.add-files{
+//  box-sizing: border-box;
+//  width: 120px;
+//  height: 120px;
+//  position: fixed;
+//  right: 0;
+//  z-index: 300000;
+////  top: 0;
+////  left: 0;
+//  cursor: pointer;
+//  display: block;
+//  -webkit-appearance: none;
+//  -moz-appearance: none;
+//  appearance: none;
+//  opacity: 0;
+//  background-color: #fff;
+//}
+
+//.cross {
+//  background: linear-gradient(to bottom, transparent 47.5%, #d6d6d6 47.5%, #d6d6d6 52.5%, transparent 52.5%),
+//  linear-gradient(to right, transparent 47.5%, #d6d6d6 47.5%, #d6d6d6 52.5%, transparent 52.5%);
+//  cursor: pointer;
+//}
+//.cross:before{
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 120px;
+//  height: 120px;
+//  cursor:pointer;
+//  background: linear-gradient(to right, transparent 0%,#fff 0%, #fff 25%, transparent 25%),
+//  linear-gradient(to bottom, transparent 0%,#fff 0%, #fff 25%, transparent 25%);
+//}
+//.cross:after{
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  cursor:pointer;
+//  width: 120px;
+//  height: 120px;
+//
+//  background: linear-gradient(to right, transparent 75%, #fff 75%, #fff 100%, transparent 100%),
+//  linear-gradient(to bottom, transparent 75%,#fff 75%, #fff 100%, transparent 100%);
+//}

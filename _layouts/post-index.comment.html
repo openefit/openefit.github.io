@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/markdown.css">
+
+</head>
+
+<body id="post-index"
+{% if page.image.feature %}class="feature"{% endif %}>
+{% include browser-upgrade.html %}
+{% include navigation.html %}
+
+<!--<div class="entry-header">-->
+  <!--&lt;!&ndash;{% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div>/.image-credit{% endif %}&ndash;&gt;-->
+  <!--{% if page.image.feature %}-->
+    <!--<div class="entry-image">-->
+      <!--<img id="headerPic" src="/images/{{ page.image.feature }}">-->
+    <!--</div>&lt;!&ndash; /.entry-image &ndash;&gt;-->
+  <!--{% endif %}-->
+  <!--<div class="header-title">-->
+    <!--<div class="header-title-wrap">-->
+      <!--<h1>{{ site.title }}</h1>-->
+      <!--<h2 class="title" style="border: none!important;background-image: none!important;">{{ page.description }}</h2>-->
+    <!--</div>&lt;!&ndash; /.header-title-wrap &ndash;&gt;-->
+  <!--</div>&lt;!&ndash; /.header-title &ndash;&gt;-->
+  <!--<span id="headerPicDesc" style="position:absolute;right:5px;bottom:5px;color:rgb(204, 194, 194)">For The Queen</span>-->
+<!--</div>-->
+<!-- /.entry-header -->
+
+<!--<script type="text/javascript">-->
+  <!--var picData = [{-->
+    <!--src : '/images/index.jpg',-->
+    <!--desc : 'For the Queen'-->
+  <!--},{  },{  }],-->
+  <!--picIndex = ((new Date).getMonth() +1) % picData.length,-->
+<!--//  curDate = picData[picIndex],-->
+  <!--curDate = picDate[0],-->
+  <!--headerPic = document.getElementById('headerPic'),-->
+  <!--headerPicDesc = document.getElementById('headerPicDesc');-->
+
+  <!--headerPic.setAttribute('src', curDate.src);    -->
+  <!--headerPicDesc.innerHTML = curDate.desc;-->
+<!--</script>-->
+
+
+<div id="main" role="main">
+  {{ content }}
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{% include scripts.html %}          
+
+</body>
+</html>

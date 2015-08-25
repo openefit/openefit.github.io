@@ -1,0 +1,397 @@
+.main {
+  /* Header */
+  /* Top Navigation Style */
+  /* Demo links */
+  /* Content */
+  /* Related demos */
+  /* cards wrapper and close btn */
+  /* CARD */
+  /* Fix IE */
+  /* PATTERN */
+  /* disable scale on firefox */
+}
+@font-face {
+  font-family: 'codropsicons';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/codropsicons/codropsicons.eot');
+  src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+.main *,
+.main *:after,
+.main *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main .clearfix:before,
+.main .clearfix:after {
+  content: '';
+  display: table;
+}
+.main .clearfix:after {
+  clear: both;
+}
+.main body {
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #3b393d;
+  background: #f0f0f0;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.main body.body--hidden {
+  overflow: hidden;
+}
+.main body.body--hidden .codrops-header,
+.main body.body--hidden .content--related {
+  opacity: 0;
+}
+.main .codrops-header,
+.main .content--related {
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+.main a {
+  text-decoration: none;
+  color: #de6551;
+  outline: none;
+}
+.main a:hover,
+.main a:focus {
+  color: #3b393d;
+}
+.main .demo-2 a {
+  color: #7cc576;
+}
+.main .demo-3 {
+  background: #1b1b1b;
+}
+.main .demo-4 {
+  background: #acaad1;
+}
+.main .demo-4 a {
+  color: #6448a0;
+}
+.main .demo-4 .codrops-header h1 span {
+  color: #4f4c4c;
+}
+.main .hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+.main .codrops-header {
+  padding: 2em 1em;
+  text-align: center;
+}
+.main .codrops-header h1 {
+  font-size: 2.25em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: .5em 0 0;
+}
+.main .codrops-header h1 span {
+  font-size: .45em;
+  display: block;
+  padding: .5em 0 1em;
+  color: #999;
+}
+.main .codrops-links {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+.main .codrops-links::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: #ddd;
+  -webkit-transform: rotate3d(0, 0, 1, 22.5deg);
+  transform: rotate3d(0, 0, 1, 22.5deg);
+}
+.main .codrops-icon {
+  display: inline-block;
+  width: 1.5em;
+  margin: .5em;
+  padding: 0em 0;
+  text-decoration: none;
+}
+.main .codrops-icon span {
+  display: none;
+}
+.main .codrops-icon:before {
+  font-family: 'codropsicons';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  margin: 0 5px;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+}
+.main .codrops-icon--drop:before {
+  content: '\e001';
+}
+.main .codrops-icon--prev:before {
+  content: '\e004';
+}
+.main .codrops-demos {
+  margin: 2em 0 0;
+}
+.main .codrops-demos a {
+  display: inline-block;
+  margin: 0 .5em;
+}
+.main .codrops-demos a.current-demo {
+  font-weight: bold;
+  color: #3b393d;
+}
+.main .main-wrapper {
+  padding: 1em 0 4em;
+}
+.main .content--related {
+  font-weight: bold;
+  text-align: center;
+}
+.main .media-item {
+  display: inline-block;
+  padding: 1em;
+  vertical-align: top;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.main .media-item__img {
+  max-width: 100%;
+  opacity: .3;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.main .media-item:hover .media-item__img,
+.main .media-item:focus .media-item__img {
+  opacity: 1;
+}
+.main .media-item__title {
+  font-size: 1em;
+  margin: 0;
+  padding: .5em;
+}
+.main .wrapper {
+  overflow: auto;
+  width: 95%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 50em) {
+  .main .codrops-header {
+    padding: 3em 10% 4em;
+  }
+}
+@media screen and (max-width: 40em) {
+  .main .codrops-header h1 {
+    font-size: 2.4em;
+    line-height: 1.2;
+  }
+}
+.main .card {
+  position: relative;
+  float: left;
+  width: 29%;
+  height: 0;
+  margin: 2%;
+  padding-bottom: 20%;
+}
+.main .card__container {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.main .card__container--closed {
+  position: absolute;
+  overflow: hidden;
+}
+.main .card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main .card__container--closed .card__image {
+  position: relative;
+  cursor: pointer;
+}
+.main .card__container--fix-image .card__image {
+  position: fixed;
+}
+.main .card__content {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 400px auto 60px;
+  padding: 30px 40px 22px;
+  background: #fff;
+}
+.main .card__container--closed .card__content {
+  margin-top: 0;
+  padding: 0 16px;
+  pointer-events: none;
+  background: transparent;
+}
+.main .card__caption {
+  font-size: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 35px 30px 0px;
+}
+.main .card__container--closed .card__caption {
+  font-size: 1em;
+  max-width: auto;
+  padding: 10px 10px 25px;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.main .card__title {
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 5px 0 0 0;
+  color: #3b393d;
+}
+.main .card__container--closed .card__title {
+  color: #fff;
+}
+.main .card__subtitle {
+  font-size: .95em;
+  line-height: 1;
+  margin: 5px 0 0;
+  color: #777778;
+}
+.main .card__container--closed .card__subtitle {
+  color: #f5f5f5;
+}
+.main .card__copy {
+  font-size: 1.25em;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 30px 100px;
+  color: #3b393d;
+}
+.main .card__copy p:first-of-type {
+  font-size: 1.5em;
+  padding: 0 0 1em 0;
+}
+.main .card__btn-close {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 36px;
+  cursor: pointer;
+}
+.main .card__container--closed .card__btn-close {
+  display: none;
+}
+.main .meta {
+  font-size: .85em;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 0 35px 0;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.main .meta__avatar {
+  border-radius: 50%;
+}
+.main .meta__author {
+  font-weight: bold;
+  padding: 0 15px;
+}
+.main .meta__date {
+  margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 980px) {
+  .main .card {
+    width: 46%;
+    padding-bottom: 32.2%;
+  }
+  .main .card__content {
+    margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .main .card {
+    width: 96%;
+    padding-bottom: 67.2%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main .card__caption {
+    font-size: 1.25em;
+    padding: 35px 0px 0px;
+  }
+  .main .meta {
+    padding: 0 0 25px 0;
+  }
+  .main .card__copy {
+    font-size: 90%;
+    padding: 25px 0px 100px;
+  }
+}
+.main .pattern {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center / cover;
+}
+.main .pattern--hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.main .pattern--hidden .polygon {
+  transition-duration: 0ms;
+}
+.main .pattern svg {
+  width: 100%;
+  height: 100%;
+}
+.main .polygon {
+  transition: -webkit-transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+.main .polygon--hidden {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.main .ff .polygon {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}

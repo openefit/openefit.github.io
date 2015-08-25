@@ -1,0 +1,21 @@
+---
+---
+{
+    "title": "y轴旋转"
+    ,"subTitle": "CSS3"
+    ,"wrapper" :
+    {
+        "class": "mw1000",
+        "style": {
+            "max-width": "1000px"
+        }
+    }
+    ,"filter": "css"
+    ,"class": "wh700"
+    ,"style": {
+        "width": "800px",
+        "height": "750px"
+    }
+    ,"type":  "page"
+    ,"url": "{{ site:url }}/works/css-animation-rotate-x"
+}

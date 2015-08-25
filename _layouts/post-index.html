@@ -1,0 +1,54 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    {% include head.html %}
+    <script src="{{ site.url }}/assets/js/plugins/require.js"></script>
+    <script>
+        require.config({
+            baseUrl: '/assets/',
+            paths: {
+                'jQuery': '/assets/js/vendor/jquery-1.11.3.min',
+                'this': '/page/index/'
+            }
+            ,map: {
+                '*': {
+                    'css': '/assets/js/plugins/require.css.js',
+                    'text': '/assets/js/plugins/require.text.js'
+                }
+            }
+        });
+        require(['js/plugins/underscore'], function (_) {
+//        console.log(_);
+        });
+        require(['jQuery'], function () {
+            require(['js/scripts.min']);
+        });
+    </script>
+</head>
+<script>
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+    };
+
+</script>
+<body id="post-index"
+{% if page.image.feature %}class="feature"{% endif %}>
+{% include browser-upgrade.html %}
+{% include navigation.html %}
+{% include navbar.index.html %}
+<div class="container main" >
+    {{content}}
+</div>
+
+<div class="footer-wrapper">
+    <footer role="contentinfo">
+        {% include footer.html %}
+    </footer>
+</div>
+
+</body>
+</html>

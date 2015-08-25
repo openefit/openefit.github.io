@@ -1,0 +1,35 @@
+---
+---
+<div class="card">
+    <div class="card__container card__container--closed">
+        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <clipPath id="clipPath<%= index %>">
+                    <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                </clipPath>
+            </defs>
+            <image clip-path="url(#clipPath<%= index %>)" width="1920" height="1200" xlink:href="<%= image %>"></image>
+        </svg>
+        <div class="card__content">
+            <i class="card__btn-close glyphicon glyphicon-remove"></i>
+            <div class="card__caption">
+                <h2 class="card__title"> <%=  title  %></h2>
+                <p class="card__subtitle"><%=  subTitle  %></p>
+            </div>
+
+            <div class="card__copy">
+                {% if (page.meta) %}
+                <div class="meta">
+                    <img class="meta__avatar" src="<%= meta.avatar %>" alt="author01" />
+                    <span class="meta__author"> <%=  meta.author  %></span>
+                    <span class="meta__date"> <%=  meta.data  %></span>
+                </div>
+                {% endif %}
+                <div class="__main-content">
+                <%=  content  %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
