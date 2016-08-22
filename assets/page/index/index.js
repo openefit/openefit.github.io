@@ -367,7 +367,7 @@ require([
     'js/util/xhr',
     'js/util/scrollLoad',
     'js/util/loading',
-    'text!page/index/card.tpl.html',
+    'text!page/index/card.tpl.txt',
     'text!page/index/cards.json',
     'text!/cardsTpl/app-page.html'
 ], function ($, _, jOrcode, xhr, scrollLoad, loadingModule, tplCard, cardsJson, tplAppPage) {
