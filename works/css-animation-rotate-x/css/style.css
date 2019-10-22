@@ -31,10 +31,10 @@ ul li {
     transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
+    transform: rotateY(30deg);
+    -moz-transform: rotateY(30deg);
+    -ms-transform: rotateY(30deg);
+    -webkit-transform: rotateY(30deg);
   }
 }
 @keyframes rotate {
@@ -46,8 +46,10 @@ ul li {
     transform: rotateX(0deg);
   }
   to {
-    transform: rotateX(360deg);
-    -webkit-transform: rotateX(360deg);
+    transform: rotateY(30deg);
+    -moz-transform: rotateY(30deg);
+    -ms-transform: rotateY(30deg);
+    -webkit-transform: rotateY(30deg);
   }
 }
 .page1 ul {
@@ -55,18 +57,22 @@ ul li {
   -moz-animation-name: rotate;
   -o-animation-name: rotate;
   animation-name: rotate;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: ;
+  -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-duration: 45s;
-  -moz-animation-duration: 45s;
-  -o-animation-duration: 45s;
-  animation-duration: 45s;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
